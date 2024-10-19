@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/275854716_1009516859998712_3360791562563963516_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=Nd-x8LBVkfEAX-8j_3d&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfCE12FbrIzhS4MFFIpLnp91XXbAS27AcV3yTsAqHtNIHw&oe=640ADB19"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CHÚC MỪNG 20/10</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="loader">
+        <div class="cardHover">
+          <div class="inner one" style="--i: 1"></div>
+          <div class="inner two" style="--i: 1"></div>
+          <div class="inner three" style="--i: 1"></div>
+          <div class="box-heart">
+            <div class="heart"></div>
+          </div>
+        </div>
+      </div>
+      <button><p>Nhấn vào đây đi cậu :33</p></button>
+      <div class="content">
+        <i class="fa-solid fa-xmark"></i>
+        <h1>Gửi cậu!</h1>
+        <p>
+          "💗Nhân dịp 20/10 mình chúc bạn Ánh luôn luôn xinh đẹp, mạnh khỏe, hạnh phúc, đỗ được đại học mong muốn, mình cũng cảm ơn bạn khi đã luôn trò chuyện với mình điều đó đã khiến mình rất vui và giúp mình có thêm động lực hơn.  Mong cậu sẽ tiếp tục trò chuyện với mình nhiều hơn nữa!💗(chúc bạn sớm tìm được nửa kia của mình nha:33)💗"
+        </p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".wrapper"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.25,
+      gyroscopeMinAngleX: -45,
+    });
+    var btn = document.querySelector("button");
+    var closeBtn = document.querySelector(".fa-xmark");
+    btn.addEventListener("click", () => {
+      document.querySelector(".wrapper").classList.add("active");
+      btn.style.display = "none";
+    });
+    closeBtn.addEventListener("click", () => {
+      document.querySelector(".wrapper").classList.remove("active");
+      btn.style.display = "block";
+    });
+  </script>
+</html>
